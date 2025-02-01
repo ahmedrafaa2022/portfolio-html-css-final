@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --primary-color: #155c6f;
+    --secondary-color: #2bb68e;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+h1,
+h2 {
+    font-family: "Saira", serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+/* Start Header */
+header {
+    background-color: var(--bg-primary);
+    height: 100vh;
+}
+
+#home #logo {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+header .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+
+
+}
+
+header .navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .navbar nav ul a {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+
+
+}
+
+header .navbar nav ul a.active {
+    color: var(--secondary-color);
+}
+header .navbar nav ul a:hover{
+    color:#fff;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+header .content-text {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    align-items: center;
+    margin: auto;
+    padding: 5rem 2rem 0;
+
+}
+
+header .content-text .main {
+    margin-bottom: 4rem;
+}
+
+header .content-text .main p.first {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header .content-text .main h1 {
+    color: var(--primary-color);
+    font-size: 60px;
+    margin-block: 1rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .content-text .main p.second {
+    color: var(--primary-color);
+    font-size: 22px;
+
+}
+
+header .content-text .main .social-icon {
+    margin-block: 1rem;
+}
+
+
+header .content-text .main .social-icon a i {
+    background-color: var(--gray);
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+
+header .content-text .main .social-icon a i:hover {
+    scale: 0.90;
+    opacity: 1;
+    background-color: var(--primary-color);
+}
+
+header .content-text .main .aboutBtn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+header .content-text .main .aboutBtn:hover {
+    background-color: #1c9c76;
+}
+
+header .content-text .main .aboutBtn i {
+    margin-left: 5px;
+    margin-top: 1rem;
+}
+
+header .content-text img {
+    max-width: 800px;
+    width: 28rem;
+    border-bottom-right-radius:50% ;
+    border-bottom-left-radius:40% ;
+
+}
+
+/* End Header */
+/* Start About Me */
+#about,
+#skills,
+#services{
+    padding: 6rem 0;
+}
+
+#about h2,
+#skills h2,
+#services h2,
+#contact h2 {
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#about hr,
+#skills hr,
+#services hr {
+    width: 100px;
+    margin: auto;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-bottom: none;
+}
+
+#about .about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+#about .about-content .col-1 h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#about .about-content .col-1 h3 span {
+    color: var(--secondary-color);
+}
+
+#about .about-content .col-1 p {
+    line-height: 1.8rem;
+    color: var(--gray);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#about .about-content .col-2 {
+    line-height: 2rem;
+}
+
+#about .about-content .col-2 p {
+    font-weight: 600;
+}
+
+#about .about-content .col-2 p {
+    border-bottom: 1px solid #bbbbbea4;
+    padding-bottom: 8px;
+}
+
+#about .about-content .col-2 p span {
+    color: var(--gray);
+
+}
+
+/* End About Me */
+
+/* Start Skills */
+#skills {
+    background-color: var(--primary-color);
+}
+
+#skills h2 {
+    color: #fff;
+}
+
+#skills .fa-solid {
+    margin-right: 8px;
+}
+
+#skills h2 span,
+#contact h2 span {
+    color: var(--secondary-color);
+}
+
+#skills .skills-content {
+    background-color: #0f272d;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+#skills .skills-content .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+#skills .skills-content .row .item {
+    color: #fff;
+    background-color: #0e0d0d57;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all ease 0.3s
+}
+
+#skills .skills-content .row .item:hover {
+    background-color: #0504046b;
+    box-shadow: 10px 10px 10px #00f4ab0c, -10px -10px 10px #00f4ab0c;
+    scale: 0.98;
+    cursor: pointer;
+
+
+}
+
+#skills .skills-content .row .item .fa-brands {
+    font-size: 4rem;
+    padding-bottom: 8px;
+}
+
+/* End Skills */
+/* Start Services */
+#services,
+#contact {
+    background-color: #03e09e25;
+}
+
+#services .heading h2 span {
+    color: var(--secondary-color);
+}
+
+#services .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    text-align: center;
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+#services .row .item {
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#services .row .item:hover {
+    scale: 1.04;
+}
+
+#services .row .item img {
+    width: 100px;
+}
+
+#services .row .item h3 {
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+#services .row .item p {
+    font-size: 14px;
+}
+
+/* End Services */
+
+/* Start Contact Us */
+#contact {
+    padding-block: 4rem;
+
+}
+
+#contact .row {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+#contact .row img {
+    width: 450px;
+}
+
+#contact .row input,
+#contact .row textarea {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    background-color: #03e09e25;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+#contact .row button {
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#contact .row button:hover {
+    background-color: #1c9c76;
+}
+
+
+/* End Contact Us */
+
+/* Start Footer */
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 18px;
+    padding-block: 0.5rem;
+    color: #fff;
+}
+
+/* End Footer */
+
+/* Tablet Respnseve */
+@media(max-width:860px) {
+    header .navbar nav {
+        display: block;
+        text-align: center;
+}
+header .navbar nav ul{
+    margin-top: 20px;
+}
+header .navbar nav ul a  {
+    padding: 0px 8px;
+}
+header .content-text {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+header .content-text .main {
+    margin-top: 5rem;
+    margin-bottom: 0;
+
+}
+header .content-text .main h1 {
+    font-size: 50px;
+}
+header .content-text img{
+    margin: auto;
+    max-width: 350px;
+}
+#about .about-content , #contact .row {
+    grid-template-columns:  1fr;
+}
+
+#skills .skills-content .row ,#services .row {
+
+    grid-template-columns: repeat(2, 1fr);
+}
+#contact .row img{
+    max-width: 250px;
+    margin: auto;
+}
+}
+/* Phone Responseve */
+
+@media(max-width: 528px){
+
+    header .content-text .main h1 {
+        font-size: 37px;
+    }
+    
+header .content-text .main p.first ,header .content-text .main p.second {
+    font-size: 16px;
+}
+#about h2,
+#skills h2,
+#services h2,
+#contact h2 {
+    font-size: 28px;
+}
+#about .about-content .col-1 h3 {
+    font-size: 18px;
+}
+#skills .skills-content .row ,#services .row {
+    grid-template-columns: 1fr;
+}
+#contact .row{
+    padding: 2rem 1rem;
+}
+}
